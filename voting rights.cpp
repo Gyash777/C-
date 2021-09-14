@@ -27,7 +27,7 @@ int main()
 	}
 	else
 	{
-		cout<<"Person is not eligible for voating"<<endl;
+		cout<<"Person is not eligible for voting"<<endl;
 	}
 
 	return 0;
