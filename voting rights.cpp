@@ -3,19 +3,32 @@ using namespace std;
 
 int main()
 {
-    int a;
-    cout << "Enter age of a user:";
-    cin>>a;
+	int age;
 
-    if (a >= 18) 
-	{
-        cout << "You are eligible for voting.\n";
-        cout << "Choose your Minister wisely!";
-    } else 
-	{
-        cout << "You are not eligible for voting.\n";
-        cout << "Wait for "<<18-a<<" years for choosing your Minister.\n";
-    }
+	cout<<"Enter your age: ";
+	cin>>age;
 
-    return 0;
+	//person is teenager or not
+	//>=13 and <=19
+	if(age>=13 && age<=19)
+	{
+		cout<<"Person is Teenager"<<endl;
+	}
+	else
+	{
+		cout<<"Person is not a Teenager"<<endl;
+	}
+
+
+	//condition to check voting eligility
+	if(age>=18)
+	{
+		cout<<"Personl is eligible for voting"<<endl;
+	}
+	else
+	{
+		cout<<"Person is not eligible for voating"<<endl;
+	}
+
+	return 0;
 }
